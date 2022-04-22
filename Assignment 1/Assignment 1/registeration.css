@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: repeating-radial-gradient(#000000 ,#7D7D7D ,#ECECEC)
+}
+
+
+h1{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 3px;
+    
+}
+.nav{
+    background-color: #636363;
+    border: 1px solid  palegreen ;
+    border-radius: 40px;
+    display: flex;
+    justify-content:space-around ;
+}
+.nav li:hover{
+    transform: scale(1.5);
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    float: left;
+    display: block;
+    padding: 2px;
+    margin-top: 10px;
+    margin-left: 80px;
+}
+ul li a{
+    color: #D2B48C;
+    text-decoration: none;
+    font-size: 22px;
+}
+ul li:hover a{
+    color: #DAA520;
+}
+ul li a:hover{
+    transform: scale(1.5);
+}
+.all{
+    width: 100%;
+    height: 100vh;
+}
+fieldset{
+    border: 3px solid green transparent;
+    background-image: url(./images/f.png);
+    background-clip: border-box;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+legend{
+    color: black;
+    font-size: 30px;
+    font-style: italic,bold;
+    font-family: 'Bangers', cursive;
+}
+.form{
+    border: 1px solid red transparent ;
+    width: 40%;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 30px;
+    float: left;
+    
+    color: red;
+    font-weight: bolder;
+}
+.table{
+    opacity: .7;
+}
+.footer{
+    position: relative;
+    float: left;
+    width: 50%;
+    height: auto;
+    margin-left: 50px;
+    padding: 30px;
+    border: 2px solid green transparent;
+}
+.a h4{
+    font-size: 50px;
+    color: #DAA520;
+}
+i{
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+}
+p::first-line {
+    font-size: 20px;
+    color: violet;
+    font-style: italic;
+
+}
+p::first-letter {
+    color: blue;
+    font-size: 40px;
+}
+#ani{
+    border: 2px solid red transparent;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    float: left;
+    background-image: url(./images/aaa.jpg);
+    animation:lap 2s infinite;
+}
+#ani img{
+    width: 198px;
+    height: 198px;
+}
+@keyframes lap{
+    from{
+        background-image: url(./images/ani2.jpg);
+    }
+    to{
+        background-image: url(./images/aaaa1.jpg);
+    }
+}
+#z{
+    float: left;
+    width: 1000px;
+    height: 150px;
+    margin-left: 40px;
+    margin-top: 30px;
+    border: 1px solid blue transparent;
+}
+#z img{
+    width: 200px;
+    height: 150px;
+    margin-left: 20px;
+}
+.one,.two,.three{
+    width: 200px;
+    height: 150px;
+    position: absolute;
+    top:600px;
+    left: 970px;
+}
+.one{
+    width: 220px;
+    height: 160px;
+    z-index: 5;
+}
+.two{
+    width: 300px;
+    height: 220px;
+    z-index: 2;
+}
+.three{
+    width: 400px;
+    height: 300px;
+    z-index: 1;
+}
